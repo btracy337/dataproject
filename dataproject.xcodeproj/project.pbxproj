@@ -11,10 +11,10 @@
 		B9D75F7E21AC48F800179084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D75F7C21AC48F800179084 /* Main.storyboard */; };
 		B9D75F8021AC490100179084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D75F7F21AC490100179084 /* Assets.xcassets */; };
 		B9D75F8321AC490100179084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D75F8121AC490100179084 /* LaunchScreen.storyboard */; };
-		B9FCC42821B18593001F5D2D /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FCC42721B18593001F5D2D /* DataViewController.swift */; };
-		B9FCC42A21B185BE001F5D2D /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FCC42921B185BE001F5D2D /* BucketItemCell.swift */; };
 		B9FCC42D21B185EC001F5D2D /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FCC42C21B185EC001F5D2D /* BucketItem.swift */; };
 		B9FCC42F21B18643001F5D2D /* bucket18.csv in Resources */ = {isa = PBXBuildFile; fileRef = B9FCC42E21B18643001F5D2D /* bucket18.csv */; };
+		B9FCC43121B18DB8001F5D2D /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FCC43021B18DB8001F5D2D /* DataViewController.swift */; };
+		B9FCC43321B18DFE001F5D2D /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FCC43221B18DFE001F5D2D /* BucketItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +24,10 @@
 		B9D75F7F21AC490100179084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9D75F8221AC490100179084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9D75F8421AC490100179084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9FCC42721B18593001F5D2D /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		B9FCC42921B185BE001F5D2D /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
 		B9FCC42C21B185EC001F5D2D /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
 		B9FCC42E21B18643001F5D2D /* bucket18.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket18.csv; path = ../../../../../../Downloads/bucket18.csv; sourceTree = "<group>"; };
+		B9FCC43021B18DB8001F5D2D /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		B9FCC43221B18DFE001F5D2D /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 		B9D75F8B21AC493600179084 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B9FCC42721B18593001F5D2D /* DataViewController.swift */,
-				B9FCC42921B185BE001F5D2D /* BucketItemCell.swift */,
+				B9FCC43021B18DB8001F5D2D /* DataViewController.swift */,
+				B9FCC43221B18DFE001F5D2D /* BucketItemCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,9 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9FCC43321B18DFE001F5D2D /* BucketItemCell.swift in Sources */,
+				B9FCC43121B18DB8001F5D2D /* DataViewController.swift in Sources */,
 				B9FCC42D21B185EC001F5D2D /* BucketItem.swift in Sources */,
-				B9FCC42A21B185BE001F5D2D /* BucketItemCell.swift in Sources */,
-				B9FCC42821B18593001F5D2D /* DataViewController.swift in Sources */,
 				B9D75F7921AC48F800179084 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
