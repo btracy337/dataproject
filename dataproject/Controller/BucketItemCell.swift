@@ -33,7 +33,7 @@ class BucketItemCell: UITableViewCell {
         
         let ascii = emojiStart + Int(arc4random_uniform(UInt32(emojiRange)))
         let emoji = UnicodeScalar(ascii)?.description
-        return emoji
+        return emoji!
         
         
         
