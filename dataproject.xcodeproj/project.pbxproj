@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		B9D75F7921AC48F800179084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D75F7821AC48F800179084 /* AppDelegate.swift */; };
-		B9D75F7B21AC48F800179084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D75F7A21AC48F800179084 /* ViewController.swift */; };
 		B9D75F7E21AC48F800179084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D75F7C21AC48F800179084 /* Main.storyboard */; };
 		B9D75F8021AC490100179084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D75F7F21AC490100179084 /* Assets.xcassets */; };
 		B9D75F8321AC490100179084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D75F8121AC490100179084 /* LaunchScreen.storyboard */; };
+		B9FCC42821B18593001F5D2D /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FCC42721B18593001F5D2D /* DataViewController.swift */; };
+		B9FCC42A21B185BE001F5D2D /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FCC42921B185BE001F5D2D /* BucketItemCell.swift */; };
+		B9FCC42D21B185EC001F5D2D /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FCC42C21B185EC001F5D2D /* BucketItem.swift */; };
+		B9FCC42F21B18643001F5D2D /* bucket18.csv in Resources */ = {isa = PBXBuildFile; fileRef = B9FCC42E21B18643001F5D2D /* bucket18.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B9D75F7521AC48F800179084 /* dataproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dataproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D75F7821AC48F800179084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9D75F7A21AC48F800179084 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9D75F7D21AC48F800179084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9D75F7F21AC490100179084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9D75F8221AC490100179084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9D75F8421AC490100179084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FCC42721B18593001F5D2D /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		B9FCC42921B185BE001F5D2D /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		B9FCC42C21B185EC001F5D2D /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		B9FCC42E21B18643001F5D2D /* bucket18.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket18.csv; path = ../../../../../../Downloads/bucket18.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		B9D75F7721AC48F800179084 /* dataproject */ = {
 			isa = PBXGroup;
 			children = (
+				B9FCC42B21B185D0001F5D2D /* Model */,
 				B9D75F8A21AC492600179084 /* Resources */,
 				B9D75F8B21AC493600179084 /* Controller */,
 				B9D75F8C21AC494F00179084 /* View */,
@@ -67,6 +74,7 @@
 				B9D75F7821AC48F800179084 /* AppDelegate.swift */,
 				B9D75F7F21AC490100179084 /* Assets.xcassets */,
 				B9D75F8421AC490100179084 /* Info.plist */,
+				B9FCC42E21B18643001F5D2D /* bucket18.csv */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -74,7 +82,8 @@
 		B9D75F8B21AC493600179084 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B9D75F7A21AC48F800179084 /* ViewController.swift */,
+				B9FCC42721B18593001F5D2D /* DataViewController.swift */,
+				B9FCC42921B185BE001F5D2D /* BucketItemCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -86,6 +95,14 @@
 				B9D75F8121AC490100179084 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B9FCC42B21B185D0001F5D2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9FCC42C21B185EC001F5D2D /* BucketItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +137,7 @@
 				TargetAttributes = {
 					B9D75F7421AC48F800179084 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -147,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9D75F8321AC490100179084 /* LaunchScreen.storyboard in Resources */,
+				B9FCC42F21B18643001F5D2D /* bucket18.csv in Resources */,
 				B9D75F8021AC490100179084 /* Assets.xcassets in Resources */,
 				B9D75F7E21AC48F800179084 /* Main.storyboard in Resources */,
 			);
@@ -159,7 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D75F7B21AC48F800179084 /* ViewController.swift in Sources */,
+				B9FCC42D21B185EC001F5D2D /* BucketItem.swift in Sources */,
+				B9FCC42A21B185BE001F5D2D /* BucketItemCell.swift in Sources */,
+				B9FCC42821B18593001F5D2D /* DataViewController.swift in Sources */,
 				B9D75F7921AC48F800179084 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.dataproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -331,7 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.dataproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
